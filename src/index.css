@@ -1,0 +1,82 @@
+.ipod-container {
+    margin: 0 auto;
+    background: darkgray;
+    padding-top: 14px;
+    width: 380px;
+    height: 640px;
+    border-radius: 20px;
+}
+
+/* Display */
+
+.display {
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    background-color: #ddd;
+    border-radius: 5%;
+}
+
+/* Controls */
+
+.controls-container {
+    width: 260px;
+    height: 260px;
+    border: 1px solid grey;
+    margin: 10px auto 0;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+}
+
+.controls-ok {
+    background-color: darkgrey;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid darkgrey;
+    border-radius: 50%;
+}
+
+.controls-menu {
+    position: absolute;
+    top: 8px;
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+    color: #4e4e4e;
+}
+
+.controls-prev {
+    position: absolute;
+    left: 8px;
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+    color: #4e4e4e;
+}
+
+.controls-next {
+    position: absolute;
+    right: 8px;
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+    color: #4e4e4e;
+}
+
+.controls-play-pause {
+    position: absolute;
+    bottom: 8px;
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+    color: #4e4e4e;
+}
