@@ -4,7 +4,7 @@ class Options extends React.Component {
     render() {
         return (
             <div className="options-container">
-                <div className="option-menu options" style={{}}>iPod</div>
+                <div className="option-menu options">iPod</div>
                 <div className="options">Games</div>
                 <div className="options">Music</div>
                 <div className="options">Settings</div>
