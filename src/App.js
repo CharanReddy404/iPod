@@ -17,9 +17,6 @@ class App extends React.Component {
             showPage: -1,
             general_menu: ['Games', 'Music', 'Settings', 'Cover Flow'],
             songs_sub_menu: ['All Songs', 'Artists', 'Albums'],
-            current_music_selection: 0,
-            song_index: -1,
-            currently_on_play_music_screen: false,
         }
     }
 
@@ -35,7 +32,6 @@ class App extends React.Component {
                     this.temp_selected = this.temp_selected % this.state.options.length;
                     this.setState({
                         selected: this.temp_selected,
-                        // song_index: -1
                     });
 
                     this.temp_change_in_angle = 0;
@@ -58,13 +54,6 @@ class App extends React.Component {
     }
 
     menuButtonClicked = () => {
-        /* if (this.state.options === this.state.songs_sub_menu)
-        {
-            this.setState({
-                options: this.state.general_menu
-            });
-            return;
-        } */
 
         let screenMenuClassList = document.getElementsByClassName('screen-menu')[0].classList;
         if (screenMenuClassList.contains('width-50')) {
@@ -214,32 +203,6 @@ class App extends React.Component {
                         });
                 }
             }
-        }
-    }
-
-    currentlyOnPlayMusicScreen = () => {
-        if (this.state.currently_on_play_music_screen) {
-            $('.buttons-container').removeClass('colored');
-            this.setState({
-                currently_on_play_music_screen: false
-            });
-        }
-        else
-            this.setState({
-                currently_on_play_music_screen: true
-            });
-    }
-
-    playPauseButtonClicked = () => {
-        if ($('#audio')[0] !== undefined) {
-            if ($('#audio')[0].paused)//if the music is paused i will play it, also turn on the button lights
-            {
-                $('#audio')[0].play();
-                $('.buttons-container').addClass('colored');
-                return;
-            }
-            $('#audio')[0].pause();
-            $('.buttons-container').removeClass('colored');
         }
     }
 
