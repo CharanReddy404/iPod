@@ -1,3 +1,5 @@
+/* iPod  */
+
 .ipod-container {
     margin: 0 auto;
     background: darkgray;
@@ -10,12 +12,39 @@
 /* Display */
 
 .display {
+    background-image: url("./background.jpg");
     width: 350px;
     height: 350px;
     margin: 0 auto;
     background-color: #ddd;
     border-radius: 5%;
 }
+
+/* Options */
+
+.options-container {
+    width: 175px;
+    height: 350px;
+    background-color: #ddd;
+    border-radius: 16px 0 0 17px;
+}
+
+.options {
+    font-size: x-large;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-menu {
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    background: red;
+    border-radius: 16px 0 0 0;
+}
+
 
 /* Controls */
 
